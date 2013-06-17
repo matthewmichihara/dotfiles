@@ -1,0 +1,73 @@
+# Config
+config windowHintsFontSize 100
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config windowHintsTopLeftX (windowSizeX/2)-(windowHintsWidth/2)
+config windowHintsTopLeftY (windowSizeY/2)-(windowHintsHeight/2)
+
+# General aliases
+alias sox screenOriginX
+alias soy screenOriginY
+alias ssx screenSizeX
+alias ssy screenSizeY
+
+# Position aliases
+alias centered ${sox}+${ssx}/8;${soy}+${ssy}/8 ${ssx}/8*6;${ssy}/8*6
+alias fullscreen ${sox};${soy} ${ssx};${ssy}
+alias leftHalf ${sox};${soy} ${ssx}/2;${ssy}
+alias bottomHalf ${sox};${soy}+${ssy}/2 ${ssx};${ssy}/2
+alias topHalf ${sox};${soy} ${ssx};${ssy}/2
+alias rightHalf ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}
+alias topLeftQuarter ${sox};${soy} ${ssx}/2;${ssy}/2
+alias topRightQuarter ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}/2
+alias bottomLeftQuarter ${sox};${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
+alias bottomRightQuarter ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
+
+# 1 monitor layout
+layout oneScreen 'Google Chrome' move ${fullscreen}
+layout oneScreen 'IntelliJ IDEA' move ${fullscreen}
+layout oneScreen 'Android Studio' move ${fullscreen}
+layout oneScreen 'ADT' move ${fullscreen}
+layout oneScreen 'Mail' move ${fullscreen}
+layout oneScreen 'Calendar' move ${fullscreen}
+layout oneScreen 'Textual' move ${fullscreen}
+layout oneScreen 'Terminal' move ${fullscreen}
+layout oneScreen 'Spotify' move ${fullscreen}
+
+# 2 monitor layout
+layout twoScreen 'Google Chrome' move ${fullscreen} 1
+layout twoScreen 'Mail' move ${fullscreen} 1
+layout twoScreen 'IntelliJ IDEA' move ${fullscreen} 1
+layout twoScreen 'Android Studio' move ${fullscreen} 1
+layout twoScreen 'ADT' move ${fullscreen} 1
+layout twoScreen 'Calendar' move ${fullscreen} 1
+layout twoScreen 'Textual' move ${leftHalf} 0
+layout twoScreen 'Terminal' move ${rightHalf} 0
+layout twoScreen 'Spotify' move ${fullscreen} 1
+
+# Bindings
+bind g:cmd;ctrl chain move ${centered} 0 | move ${centered} 1
+bind o:cmd;ctrl chain move ${fullscreen} 0 | move ${fullscreen} 1
+bind h:cmd;ctrl chain move ${leftHalf} 0 | move ${leftHalf} 1
+bind j:cmd;ctrl chain move ${bottomHalf} 0 | move ${bottomHalf} 1
+bind k:cmd;ctrl chain move ${topHalf} 0 | move ${topHalf} 1
+bind l:cmd;ctrl chain move ${rightHalf} 0 | move ${rightHalf} 1
+bind u:cmd;ctrl chain move ${topLeftQuarter} 0 | move ${topLeftQuarter} 1
+bind i:cmd;ctrl chain move ${topRightQuarter} 0 | move ${topRightQuarter} 1
+bind n:cmd;ctrl chain move ${bottomLeftQuarter} 0 | move ${bottomLeftQuarter} 1
+bind m:cmd;ctrl chain move ${bottomRightQuarter} 0 | move ${bottomRightQuarter} 1
+
+bind ;:cmd;ctrl throw previous
+bind /:cmd;ctrl hint ASDFJKLGH
+bind 1:cmd;ctrl layout oneScreen
+bind 2:cmd;ctrl layout twoScreen
+
+bind right:cmd;ctrl resize +10% +0
+bind left:cmd;ctrl  resize -10% +0
+bind up:cmd;ctrl    resize +0 -10%
+bind down:cmd;ctrl  resize +0 +10%
+
+bind right:ctrl;alt nudge +10% +0
+bind left:ctrl;alt  nudge -10% +0
+bind up:ctrl;alt    nudge +0 -10%
+bind down:ctrl;alt  nudge +0 +10%
