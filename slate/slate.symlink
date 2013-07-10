@@ -28,7 +28,6 @@ layout oneScreen 'Google Chrome' move ${fullscreen}
 layout oneScreen 'IntelliJ IDEA' move ${fullscreen}
 layout oneScreen 'Android Studio' move ${fullscreen}
 layout oneScreen 'ADT' move ${fullscreen}
-layout oneScreen 'Mail' move ${fullscreen}
 layout oneScreen 'Calendar' move ${fullscreen}
 layout oneScreen 'Textual' move ${fullscreen}
 layout oneScreen 'Terminal' move ${fullscreen}
@@ -36,7 +35,6 @@ layout oneScreen 'Spotify' move ${fullscreen}
 
 # 2 monitor layout
 layout twoScreen 'Google Chrome' move ${fullscreen} 1
-layout twoScreen 'Mail' move ${fullscreen} 1
 layout twoScreen 'IntelliJ IDEA' move ${fullscreen} 1
 layout twoScreen 'Android Studio' move ${fullscreen} 1
 layout twoScreen 'ADT' move ${fullscreen} 1
