@@ -14,6 +14,6 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark hub
+brew install grc coreutils spark hub apktool
 
 exit 0
