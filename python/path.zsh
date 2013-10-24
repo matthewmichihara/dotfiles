@@ -1,1 +1,1 @@
-export PATH="/usr/local/share/python/:$ZSH/bin:$PATH"
+export PATH="/usr/local/share/python/:$PATH"
