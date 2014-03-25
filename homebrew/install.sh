@@ -14,6 +14,6 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark hub apktool dex2jar
+brew install apktool dex2jar pidcat
 
 exit 0
