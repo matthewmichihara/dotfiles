@@ -16,4 +16,7 @@ fi
 # Install homebrew packages
 brew install apktool dex2jar pidcat phinze/cask/brew-cask
 
+# Install homebrew-cask apps
+brew cask install sublime-text
+
 exit 0
