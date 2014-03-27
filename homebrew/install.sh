@@ -14,6 +14,6 @@ then
 fi
 
 # Install homebrew packages
-brew install apktool dex2jar pidcat
+brew install apktool dex2jar pidcat phinze/cask/brew-cask
 
 exit 0
