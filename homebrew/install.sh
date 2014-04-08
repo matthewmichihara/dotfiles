@@ -17,6 +17,6 @@ fi
 brew install ack apktool dex2jar phinze/cask/brew-cask pidcat
 
 # Install homebrew-cask apps
-brew cask install sublime-text
+brew cask install sublime-text jd-gui
 
 exit 0
