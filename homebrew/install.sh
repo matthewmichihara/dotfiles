@@ -19,4 +19,8 @@ brew install ack apktool dex2jar phinze/cask/brew-cask pidcat
 # Install homebrew-cask apps
 brew cask install sublime-text jd-gui
 
+# rbenv like Java management - http://www.jenv.be/
+brew tap jenv/jenv
+brew install jenv
+
 exit 0
