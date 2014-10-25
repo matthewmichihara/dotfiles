@@ -17,7 +17,7 @@ fi
 brew install ack apktool dex2jar phinze/cask/brew-cask pidcat
 
 # Install homebrew-cask apps
-brew cask install sublime-text jd-gui spectacle
+brew cask install atom jd-gui spectacle
 
 # rbenv like Java management - http://www.jenv.be/
 brew tap jenv/jenv
