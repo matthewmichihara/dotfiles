@@ -14,10 +14,10 @@ then
 fi
 
 # Install homebrew packages
-brew install ack apktool dex2jar phinze/cask/brew-cask pidcat
+brew install ack apktool dex2jar phinze/cask/brew-cask pidcat tmux
 
 # Install homebrew-cask apps
-brew cask install atom jd-gui spectacle
+brew cask install atom iterm2 jd-gui spectacle
 
 # rbenv like Java management - http://www.jenv.be/
 brew tap jenv/jenv
