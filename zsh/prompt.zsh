@@ -31,21 +31,8 @@ git_prompt_info() {
   echo "${ref#refs/heads/}"
 }
 
-need_push() {
-  if [[ $(unpushed) == "" ]]
-  then
-    echo " "
-  else
-    echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
-  fi
-}
-
-unpushed () {
-  $git cherry -v @{upstream} 2>/dev/null
-}
-
 directory_name(){
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\nin $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\nin $(directory_name) $(git_dirty)\n› '
