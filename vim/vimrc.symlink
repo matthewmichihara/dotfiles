@@ -4,3 +4,6 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+" Copy to clipboard
+set clipboard=unnamed
