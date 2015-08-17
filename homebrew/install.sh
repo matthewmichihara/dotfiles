@@ -14,7 +14,14 @@ then
 fi
 
 # Install homebrew packages
-brew install ack apktool dex2jar phinze/cask/brew-cask pidcat tmux
+brew install \
+  ack \
+  apktool \
+  dex2jar \
+  phinze/cask/brew-cask \
+  pidcat \
+  tmux \
+  vim
 
 # Install homebrew-cask apps
 brew cask install atom iterm2 jd-gui spectacle
