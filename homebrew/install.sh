@@ -17,17 +17,19 @@ fi
 brew install \
   ack \
   apktool \
+  caskroom/cask/brew-cask \
   dex2jar \
-  phinze/cask/brew-cask \
+  git \
+  jenv \
   pidcat \
   tmux \
   vim
 
 # Install homebrew-cask apps
-brew cask install atom iterm2 jd-gui spectacle
-
-# rbenv like Java management - http://www.jenv.be/
-brew tap jenv/jenv
-brew install jenv
+brew cask install \
+  atom \
+  iterm2 \
+  jd-gui \
+  spectacle
 
 exit 0
