@@ -18,6 +18,7 @@ brew install \
   ack \
   apktool \
   caskroom/cask/brew-cask \
+  coreutils \
   dex2jar \
   git \
   jenv \
