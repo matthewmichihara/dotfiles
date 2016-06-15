@@ -1,6 +1,3 @@
-# Sample gitconfig
-#
-
 [hub]
         protocol = https
 [user]
@@ -46,3 +43,5 @@
 	diff = diff-highlight | less
 [interactive]
 	diffFilter = diff-highlight
+[diff]
+	compactionHeuristic = true
