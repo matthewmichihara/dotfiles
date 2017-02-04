@@ -28,9 +28,7 @@ brew install \
 
 # Install homebrew-cask apps
 brew cask install \
-  atom \
   iterm2 \
-  jd-gui \
   spectacle
 
 exit 0
