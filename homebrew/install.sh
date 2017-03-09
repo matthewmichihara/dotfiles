@@ -17,7 +17,6 @@ fi
 brew install \
   ack \
   apktool \
-  caskroom/cask/brew-cask \
   coreutils \
   dex2jar \
   git \
@@ -25,10 +24,5 @@ brew install \
   pidcat \
   tmux \
   vim
-
-# Install homebrew-cask apps
-brew cask install \
-  iterm2 \
-  spectacle
 
 exit 0
