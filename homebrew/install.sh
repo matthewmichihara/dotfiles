@@ -15,14 +15,7 @@ fi
 
 # Install homebrew packages
 brew install \
-  ack \
-  apktool \
-  coreutils \
-  dex2jar \
   git \
-  jenv \
-  pidcat \
-  tmux \
   vim
 
 exit 0
