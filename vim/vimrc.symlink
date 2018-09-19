@@ -1,4 +1,5 @@
 syntax on
+color dracula
 
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 set backspace=indent,eol,start
@@ -8,3 +9,21 @@ filetype indent plugin on
 
 " Copy to clipboard
 set clipboard=unnamed
+
+" I think this makes files open in vertical split from file viewer by default.
+let g:netrw_browse_split = 2
+
+" Split to the right over below which feels more natural
+set splitright
+
+" From: https://shapeshed.com/vim-netrw/
+
+" Turn off netrw banner
+let g:netrw_banner = 0
+
+" Vertical split for netrw by default
+let g:netrw_browse_split = 3
+
+" Make netrw window 25% of screen
+let g:netrw_winsize = 25
+
